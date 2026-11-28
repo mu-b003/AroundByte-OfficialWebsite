@@ -1,1 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#1E1F22"/><path d="M12 46 29 12h8l16 34H42l-3-8H25l-4 8z" fill="#FFC400"/><path d="m28 30 5-11 5 11z" fill="#1E1F22"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <!-- تدرج اللون الأصفر الذهبي -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE000"/>
+      <stop offset="100%" stop-color="#FFA800"/>
+    </linearGradient>
+    <!-- تدرج اللون الأبيض الفضي -->
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <!-- ظل الطية البرتقالي -->
+    <linearGradient id="foldShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D95300"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- الخلفية المربعة ذات الحواف الدائرية -->
+  <rect width="64" height="64" rx="14" fill="#1E1F22"/>
+
+  <!-- الجزء السفلي الأوسط (الأصفر) -->
+  <path d="M26 37 H38 L47 48 H34 Z" fill="url(#goldGrad)"/>
+
+  <!-- الطية الداخلية في الأعلى -->
+  <path d="M35 16 Q38 16 39 19 L34 28 L30 22 Z" fill="url(#foldShadow)"/>
+
+  <!-- الضلع الأيمن (الأبيض الفضي) -->
+  <path d="M38 16 C40 16 41.5 17.5 42.5 19.5 L53.5 42.5 C55 45.5 53 48 49.5 48 H47 L33.5 24 L37 17 C37.3 16.4 37.6 16 38 16 Z" fill="url(#silverGrad)"/>
+
+  <!-- الضلع الأيسر (الأصفر الذهبي) -->
+  <path d="M26 16 H38 C36.5 16 35.5 17 34.5 19 L21.5 45 C20.2 47.5 18 48 15.5 48 H14.5 C11 48 9 45.5 10.5 42.5 L21.5 19.5 C22.5 17.5 24 16 26 16 Z" fill="url(#goldGrad)"/>
+</svg>
